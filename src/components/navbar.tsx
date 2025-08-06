@@ -22,13 +22,13 @@ export default function Navbar() {
 
                         <div>
                             <ul className="hidden w-full flex-col items-center justify-end gap-6 lg:flex lg:flex-row lg:gap-8 lg:text-base">
-                                <Link href="/">
-                                    <p className="font-semibold text-black">
+                                <Link href="/" className="relative">
+                                    <p className="under font-semibold text-black">
                                         Home
                                     </p>
                                 </Link>
-                                <Link href="/about">
-                                    <p className="font-semibold text-black">
+                                <Link href="/about" className="relative">
+                                    <p className="under font-semibold text-black">
                                         About us
                                     </p>
                                 </Link>
@@ -56,19 +56,16 @@ export default function Navbar() {
                                 showMenu ? "flex" : "hidden"
                             } font-outfit absolute top-24 left-0 z-20 h-svh w-full flex-col gap-10 bg-[#444444] px-4 py-[61px] md:top-36 lg:hidden`}
                         >
-                            {nav.map((item) => (
-                                <Link
-                                    href={item.link}
-                                    className="text-header-black relative flex w-fit cursor-pointer items-center gap-2"
-                                    key={item.id}
-                                    onClick={() => setShowMenu(false)}
-                                >
-                                    <p className="under">{item.name}</p>
-                                </Link>
-                            ))}
-                            <button className="bg-orange-red rounded-lg px-4 py-[10px] text-white">
-                                Contact Us
-                            </button>
+                            <Link href="/">
+                                <p className="font-semibold text-black">Home</p>
+                            </Link>
+                            <Link href="/about">
+                                <p className="font-semibold text-black">
+                                    About us
+                                </p>
+                            </Link>
+
+                            <ServiceDropdown />
                         </ul>
 
                         <div

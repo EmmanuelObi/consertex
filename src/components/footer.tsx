@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <section className="px-4 py-10 xl:px-[125px]">
             <div className="container mx-auto flex flex-col items-center justify-between gap-3 md:flex-row">
-                <h4>
+                <h4 className="text-center">
                     © {new Date().getFullYear()} Consertex Inc. All rights
                     reserved.
                 </h4>

@@ -11,9 +11,9 @@ import Link from "next/link";
 export default function ServiceDropdown() {
     return (
         <>
-            <Menubar className="all-[unset] border-none shadow-none">
+            <Menubar className="all-[unset] h-6 border-none p-0 shadow-none lg:relative">
                 <MenubarMenu>
-                    <MenubarTrigger className="all-[unset] cursor-pointer border-none px-0 py-0 text-base font-semibold text-black outline-none hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
+                    <MenubarTrigger className="all-[unset] under cursor-pointer border-none px-0 py-0 text-base font-semibold text-black outline-none hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
                         Services
                     </MenubarTrigger>
                     <MenubarContent align="end">

@@ -5,7 +5,7 @@ export default function FutureOfEnergy() {
                 <h1 className="text-center text-2xl font-semibold md:text-3xl">
                     Empowering the Future of Energy
                 </h1>
-                <p className="mx-auto max-w-[700px] py-6 text-center text-sm leading-6 md:text-base md:leading-8">
+                <p className="mx-auto max-w-[700px] py-6 text-center text-sm leading-6 md:text-base md:leading-7">
                     At Consertex, we are dedicated to providing cutting-edge,
                     sustainable, and efficient solutions that drive progress in
                     the global oil and energy industry. With decades of combined

@@ -18,9 +18,9 @@ export const services = [
     },
     {
         id: 2,
-        title: "Asset Management",
+        title: "Retail Site Optimisation",
         subtitle:
-            "Intelligent systems to monitor, maintain, and optimize energy assets for maximum operational efficiency and long-term performance.",
+            "Data driven strategies to select, design, and optimise retail energy sites for peak visibility, customer reach, and sustained profitability.",
         icon: <Boxes className="h-8 w-8 text-red-500" />,
     },
     {

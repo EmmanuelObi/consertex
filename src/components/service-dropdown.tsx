@@ -16,10 +16,10 @@ export default function ServiceDropdown() {
                     <MenubarTrigger className="all-[unset] under cursor-pointer border-none px-0 py-0 text-base font-semibold text-black outline-none hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
                         Services
                     </MenubarTrigger>
-                    <MenubarContent align="end">
+                    <MenubarContent align="end" className="bg-white">
                         <MenubarItem asChild>
                             <Link
-                                href="/profile"
+                                href="/catchment-profiling"
                                 className="w-full cursor-pointer"
                             >
                                 Catchment profiling
@@ -27,15 +27,15 @@ export default function ServiceDropdown() {
                         </MenubarItem>
                         <MenubarItem asChild>
                             <Link
-                                href="/transaction"
+                                href="/retail-site-optimisation"
                                 className="w-full cursor-pointer"
                             >
-                                Asset management
+                                Retail Site Optimisation
                             </Link>
                         </MenubarItem>
                         <MenubarItem asChild>
                             <Link
-                                href="/transaction"
+                                href="/investment-analysis"
                                 className="w-full cursor-pointer"
                             >
                                 Investment Analysis
@@ -43,7 +43,7 @@ export default function ServiceDropdown() {
                         </MenubarItem>
                         <MenubarItem asChild>
                             <Link
-                                href="/transaction"
+                                href="/procurement"
                                 className="w-full cursor-pointer"
                             >
                                 Procurement
@@ -51,7 +51,7 @@ export default function ServiceDropdown() {
                         </MenubarItem>
                         <MenubarItem asChild>
                             <Link
-                                href="/transaction"
+                                href="/tailored-erp-solution"
                                 className="w-full cursor-pointer"
                             >
                                 Tailored ERP solutions
@@ -59,7 +59,7 @@ export default function ServiceDropdown() {
                         </MenubarItem>
                         <MenubarItem asChild>
                             <Link
-                                href="/transaction"
+                                href="/business-consultation"
                                 className="w-full cursor-pointer"
                             >
                                 Business Consultation
@@ -67,7 +67,7 @@ export default function ServiceDropdown() {
                         </MenubarItem>
                         <MenubarItem asChild>
                             <Link
-                                href="/transaction"
+                                href="/training"
                                 className="w-full cursor-pointer"
                             >
                                 Training

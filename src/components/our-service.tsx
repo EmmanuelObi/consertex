@@ -1,4 +1,5 @@
 import { services } from "@/constants/service";
+import Link from "next/link";
 export default function OurService() {
     return (
         <section
@@ -11,7 +12,8 @@ export default function OurService() {
                 </h1>
                 <div className="mt-10 flex cursor-pointer flex-wrap items-center justify-center gap-6">
                     {services.map((service) => (
-                        <div
+                        <Link
+                            href={service.href}
                             key={service.id}
                             className="max-w-[300px] rounded-md bg-white p-4 shadow-sm"
                         >
@@ -22,7 +24,7 @@ export default function OurService() {
                             <p className="max-w-[250px] text-sm font-light">
                                 {service.subtitle}
                             </p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

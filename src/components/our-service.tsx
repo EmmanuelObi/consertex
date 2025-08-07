@@ -1,7 +1,10 @@
 import { services } from "@/constants/service";
 export default function OurService() {
     return (
-        <section className="bg-neutral-100 px-4 py-10 xl:px-[125px]">
+        <section
+            id="services"
+            className="bg-neutral-100 px-4 py-10 xl:px-[125px]"
+        >
             <div className="container mx-auto">
                 <h1 className="text-center text-2xl font-semibold md:text-3xl">
                     Our Services

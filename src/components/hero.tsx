@@ -1,33 +1,35 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="px-4 py-10 xl:px-[125px] xl:py-20">
-            <div className="container mx-auto flex flex-col items-center justify-between gap-10 md:flex-row">
-                <header className="max-w-[500px] text-center md:text-start">
-                    <h1 className="text-3xl font-semibold text-black xl:text-4xl">
-                        Powering Precision in Oil & Energy with Data-Driven
-                        Systems
-                    </h1>
-                    <p className="py-6">
-                        Consertex offers real-time analytics, tailored ERP
-                        solutions, and industry expertise so you can make
-                        faster, smarter decisions.
-                    </p>
-                    <button className="cursor-pointer bg-red-400 px-3 py-2.5 text-white">
-                        Explore Our Services
-                    </button>
-                </header>
-                <div className="h-[400px] w-full xl:h-[500px]">
-                    <Image
-                        src="/hero-img.jpg"
-                        alt="hero image"
-                        width={800}
-                        height={800}
-                        className="h-full w-full object-cover"
-                    />
-                </div>
+        <section className="relative w-full">
+            <div className="h-[500px] w-full xl:h-[700px]">
+                <Image
+                    src="/business.jpg"
+                    alt="hero image"
+                    width={800}
+                    height={800}
+                    className="h-full w-full object-cover"
+                />
             </div>
+
+            <header className="absolute top-[25%] max-w-[500px] text-center sm:right-[10%] md:text-start">
+                <h1 className="text-3xl font-semibold text-white xl:text-4xl">
+                    Powering Precision in Oil & Energy with Data-Driven Systems
+                </h1>
+                <p className="py-6 text-white">
+                    Consertex offers real-time analytics, tailored ERP
+                    solutions, and industry expertise so you can make faster,
+                    smarter decisions.
+                </p>
+                <Link
+                    href="#services"
+                    className="cursor-pointer bg-red-700 px-3 py-2.5 text-white"
+                >
+                    Explore Our Services
+                </Link>
+            </header>
         </section>
     );
 }

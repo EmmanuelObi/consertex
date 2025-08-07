@@ -4,7 +4,7 @@ import FutureOfEnergy from "@/components/future-of-energy";
 import GetInTouch from "@/components/get-in-touch";
 export default function Home() {
     return (
-        <section className="bg-white">
+        <section className="scroll-smooth bg-white">
             <Hero />
             <OurService />
             <FutureOfEnergy />

@@ -11,13 +11,17 @@ export default function Navbar() {
 
     return (
         <section className="border-b">
-            <section className="px-4 xl:px-[125px]">
+            <section className="px-4 py-2 xl:px-[125px]">
                 <div className="container mx-auto">
                     <nav className="flex items-center justify-between py-5">
                         <div className="flex cursor-pointer gap-3">
-                            <p className="text-xl font-semibold text-black">
-                                Consertex
-                            </p>
+                            <Image
+                                src="/logo.png"
+                                alt="logo image"
+                                width={800}
+                                height={800}
+                                className="w-32"
+                            />
                         </div>
 
                         <div>
@@ -29,7 +33,7 @@ export default function Navbar() {
                                 </Link>
                                 <Link href="/about" className="relative">
                                     <p className="under font-semibold text-black">
-                                        About us
+                                        About Us
                                     </p>
                                 </Link>
 
@@ -61,7 +65,7 @@ export default function Navbar() {
                             </Link>
                             <Link href="/about">
                                 <p className="font-semibold text-black">
-                                    About us
+                                    About Us
                                 </p>
                             </Link>
 

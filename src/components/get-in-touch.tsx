@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GetInTouch() {
     return (
-        <section className="bg-red-700 px-4 py-10 md:py-20 xl:px-[125px]">
+        <section className="bg-blue-700 px-4 py-10 md:py-20 xl:px-[125px]">
             <section className="container mx-auto">
                 <div className="flex min-h-[25vh] flex-col items-center justify-center gap-2 text-center">
                     <h1 className="text-2xl font-semibold text-white md:text-3xl">

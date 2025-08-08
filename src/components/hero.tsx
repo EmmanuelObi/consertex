@@ -25,7 +25,7 @@ export default function Hero() {
                 </p>
                 <Link
                     href="#services"
-                    className="cursor-pointer bg-red-700 px-3 py-2.5 text-white"
+                    className="cursor-pointer bg-blue-700 px-3 py-2.5 text-white"
                 >
                     Explore Our Services
                 </Link>

@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         <section className="border-b">
-            <section className="px-4 py-2 xl:px-[125px]">
+            <section className="px-4 xl:px-[125px]">
                 <div className="container mx-auto">
                     <nav className="flex items-center justify-between py-5">
                         <div className="flex cursor-pointer gap-3">

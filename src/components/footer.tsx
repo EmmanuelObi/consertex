@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container mx-auto flex flex-col items-center justify-between gap-3 md:flex-row">
                 <div className="flex cursor-pointer gap-3">
                     <Image
-                        src="/logo.png"
+                        src="/logo-sm.png"
                         alt="logo image"
                         width={800}
                         height={800}

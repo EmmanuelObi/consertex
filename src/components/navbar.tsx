@@ -14,13 +14,15 @@ export default function Navbar() {
                 <div className="container mx-auto">
                     <nav className="flex items-center justify-between py-5">
                         <div className="flex cursor-pointer gap-3">
-                            <Image
-                                src="/logo.png"
-                                alt="logo image"
-                                width={800}
-                                height={800}
-                                className="w-32"
-                            />
+                            <Link href="/">
+                                <Image
+                                    src="/logo.png"
+                                    alt="logo image"
+                                    width={800}
+                                    height={800}
+                                    className="w-32"
+                                />
+                            </Link>
                         </div>
 
                         <div>

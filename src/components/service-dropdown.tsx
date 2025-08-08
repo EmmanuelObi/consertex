@@ -1,81 +1,86 @@
 import React from "react";
 import {
-    Menubar,
-    MenubarContent,
-    MenubarItem,
-    MenubarMenu,
-    MenubarTrigger,
-} from "@/components/ui/menubar";
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import Link from "next/link";
 
-export default function ServiceDropdown() {
+type ServiceDropdownProps = {
+    setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function ServiceDropdown({ setShowMenu }: ServiceDropdownProps) {
     return (
-        <>
-            <Menubar className="all-[unset] h-6 border-none p-0 shadow-none lg:relative">
-                <MenubarMenu>
-                    <MenubarTrigger className="all-[unset] under cursor-pointer border-none px-0 py-0 text-base font-semibold text-black outline-none hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
+        <NavigationMenu className="flex-none">
+            <NavigationMenuList>
+                <NavigationMenuItem className="all-[unset] border-none p-0 shadow-none lg:relative">
+                    <NavigationMenuTrigger className="all-[unset] under h-0 cursor-pointer border-none px-0 py-0 text-base font-semibold text-black outline-none hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
                         Services
-                    </MenubarTrigger>
-                    <MenubarContent align="end" className="bg-white">
-                        <MenubarItem asChild>
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent
+                        onClick={() => setShowMenu(false)}
+                        className="bg-white text-nowrap"
+                    >
+                        <NavigationMenuLink asChild>
                             <Link
                                 href="/catchment-profiling"
-                                className="w-full cursor-pointer"
+                                className="cursor-pointer"
                             >
                                 Catchment profiling
                             </Link>
-                        </MenubarItem>
-                        <MenubarItem asChild>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
                             <Link
                                 href="/retail-site-optimisation"
-                                className="w-full cursor-pointer"
+                                className="cursor-pointer"
                             >
                                 Retail Site Optimisation
                             </Link>
-                        </MenubarItem>
-                        <MenubarItem asChild>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
                             <Link
                                 href="/investment-analysis"
-                                className="w-full cursor-pointer"
+                                className="cursor-pointer"
                             >
                                 Investment Analysis
                             </Link>
-                        </MenubarItem>
-                        <MenubarItem asChild>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
                             <Link
                                 href="/procurement"
-                                className="w-full cursor-pointer"
+                                className="cursor-pointer"
                             >
                                 Procurement
                             </Link>
-                        </MenubarItem>
-                        <MenubarItem asChild>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
                             <Link
                                 href="/tailored-erp-solution"
-                                className="w-full cursor-pointer"
+                                className="cursor-pointer"
                             >
                                 Tailored ERP solutions
                             </Link>
-                        </MenubarItem>
-                        <MenubarItem asChild>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
                             <Link
                                 href="/business-consultation"
-                                className="w-full cursor-pointer"
+                                className="cursor-pointer"
                             >
                                 Business Consultation
                             </Link>
-                        </MenubarItem>
-                        <MenubarItem asChild>
-                            <Link
-                                href="/training"
-                                className="w-full cursor-pointer"
-                            >
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                            <Link href="/training" className="cursor-pointer">
                                 Training
                             </Link>
-                        </MenubarItem>
-                    </MenubarContent>
-                </MenubarMenu>
-            </Menubar>
-        </>
+                        </NavigationMenuLink>
+                    </NavigationMenuContent>
+                </NavigationMenuItem>
+            </NavigationMenuList>
+        </NavigationMenu>
     );
 }

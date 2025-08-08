@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { nav } from "@/constants/nav";
 import Link from "next/link";
 import ServiceDropdown from "./service-dropdown";
 import Image from "next/image";
@@ -37,20 +36,7 @@ export default function Navbar() {
                                     </p>
                                 </Link>
 
-                                <ServiceDropdown />
-
-                                {/* {nav.map((item) => (
-                                <Link
-                                    href={item.link}
-                                    className="text-header-black relative flex cursor-pointer items-center text-sm font-normal"
-                                    key={item.id}
-                                    onClick={() => setShowMenu(false)}
-                                >
-                                    <p className="under text-base font-medium">
-                                        {item.name}
-                                    </p>
-                                </Link>
-                            ))} */}
+                                <ServiceDropdown setShowMenu={setShowMenu} />
                             </ul>
                         </div>
 
@@ -58,18 +44,21 @@ export default function Navbar() {
                         <ul
                             className={`${
                                 showMenu ? "flex" : "hidden"
-                            } font-outfit absolute top-24 left-0 z-20 h-svh w-full flex-col gap-10 bg-[#444444] px-4 py-[61px] md:top-36 lg:hidden`}
+                            } font-outfit absolute top-24 left-0 z-20 h-svh w-full flex-col gap-10 bg-[#444444] px-4 py-[61px] lg:hidden`}
                         >
-                            <Link href="/">
+                            <Link href="/" onClick={() => setShowMenu(false)}>
                                 <p className="font-semibold text-black">Home</p>
                             </Link>
-                            <Link href="/about">
+                            <Link
+                                href="/about"
+                                onClick={() => setShowMenu(false)}
+                            >
                                 <p className="font-semibold text-black">
                                     About Us
                                 </p>
                             </Link>
 
-                            <ServiceDropdown />
+                            <ServiceDropdown setShowMenu={setShowMenu} />
                         </ul>
 
                         <div
@@ -93,13 +82,6 @@ export default function Navbar() {
                                 />
                             </div>
                         </div>
-
-                        {/* <div className="hidden items-center gap-5 lg:flex">
-                        <button className="text-lg font-semibold">Login</button>
-                        <button className="cursor-pointer rounded-lg bg-black px-4 py-[10px] text-white">
-                            Create free account
-                        </button>
-                    </div> */}
                     </nav>
                 </div>
             </section>

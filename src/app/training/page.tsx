@@ -15,7 +15,7 @@ export default function TrainingPage() {
                 </div>
                 <div className="max-w-5xl">
                     <h2 className="mb-4 text-2xl font-semibold md:text-3xl">
-                        Training
+                        Training & Development
                     </h2>
                     <p className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start">
                         At Consertex, our Training & Development service is

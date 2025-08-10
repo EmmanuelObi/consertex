@@ -75,7 +75,7 @@ export default function ServiceDropdown({ setShowMenu }: ServiceDropdownProps) {
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                             <Link href="/training" className="cursor-pointer">
-                                Training
+                                Training & Development
                             </Link>
                         </NavigationMenuLink>
                     </NavigationMenuContent>

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function Hero() {
     return (
@@ -23,12 +26,18 @@ export default function Hero() {
                     solutions, and industry expertise so you can make faster,
                     smarter decisions.
                 </p>
-                <Link
-                    href="#services"
-                    className="cursor-pointer bg-blue-700 px-3 py-2.5 text-white"
+
+                <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.6 }}
                 >
-                    Explore Our Services
-                </Link>
+                    <Link
+                        href="#services"
+                        className="cursor-pointer bg-blue-700 px-3 py-2.5 text-white hover:bg-blue-600"
+                    >
+                        Explore Our Services
+                    </Link>
+                </motion.button>
             </header>
         </section>
     );

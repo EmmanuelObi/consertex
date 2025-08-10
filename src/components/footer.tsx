@@ -19,9 +19,15 @@ export default function Footer() {
                     reserved.
                 </h4>
                 <div className="flex items-center gap-3">
-                    <Linkedin />
-                    <Twitter />
-                    <Facebook />
+                    <span className="group cursor-pointer">
+                        <Linkedin className="fill-none group-hover:fill-[#1447e6] hover:stroke-none" />
+                    </span>
+                    <span className="group cursor-pointer">
+                        <Twitter className="fill-none group-hover:fill-[#1447e6] hover:stroke-none" />
+                    </span>
+                    <span className="group cursor-pointer">
+                        <Facebook className="fill-none group-hover:fill-[#1447e6] hover:stroke-none" />
+                    </span>
                 </div>
             </div>
         </section>

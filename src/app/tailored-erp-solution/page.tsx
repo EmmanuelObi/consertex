@@ -15,7 +15,7 @@ export default function TailoredErpPage() {
                 </div>
                 <div className="max-w-5xl">
                     <h2 className="mb-4 text-2xl font-semibold md:text-3xl">
-                        Tailored Erp Solution
+                        Tailored ERP Solution
                     </h2>
                     <p className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start">
                         At Consertex, our Tailored ERP Solutions are designed

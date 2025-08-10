@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import { motion } from "motion/react";
 
 export default function GetInTouch() {
     return (
@@ -8,9 +10,13 @@ export default function GetInTouch() {
                     <h1 className="text-2xl font-semibold text-white md:text-3xl">
                         Ready to Transform Your Energy Operations?
                     </h1>
-                    <button className="mt-4 cursor-pointer bg-white px-6 py-3 text-sm text-black md:mt-8">
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.6 }}
+                        className="mt-4 cursor-pointer bg-white px-6 py-3 text-sm text-black md:mt-8"
+                    >
                         Get in Touch
-                    </button>
+                    </motion.button>
                 </div>
             </section>
         </section>

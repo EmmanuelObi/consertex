@@ -6,8 +6,8 @@ export default function RetailSiteOptimisationPage() {
             <div className="container mx-auto grid gap-10 lg:grid-cols-2 lg:items-center lg:justify-between">
                 <div className="h-[400px] w-full xl:h-[500px]">
                     <Image
-                        src="/asset.png"
-                        alt="hero image"
+                        src="/retail-site.jpg"
+                        alt="retail site optimisation illustration"
                         width={800}
                         height={800}
                         className="h-full w-full object-cover"

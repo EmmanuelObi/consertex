@@ -6,7 +6,7 @@ export default function BusinessConsultationPage() {
             <div className="container mx-auto grid gap-10 lg:grid-cols-2 lg:items-center lg:justify-between">
                 <div className="h-[400px] w-full xl:h-[500px]">
                     <Image
-                        src="/business.jpg"
+                        src="/business-consultation.jpg"
                         alt="business consultation illustration"
                         width={800}
                         height={800}

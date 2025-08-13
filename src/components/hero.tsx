@@ -4,6 +4,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
+const container = {
+    initial: { opacity: 0 },
+    animate: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+
+const fadeUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+};
+
 export default function Hero() {
     return (
         <section className="relative w-full">
@@ -17,28 +32,40 @@ export default function Hero() {
                 />
             </div>
 
-            <header className="absolute top-[25%] max-w-[500px] text-center sm:right-[10%] md:text-start">
-                <h1 className="text-3xl font-semibold text-white xl:text-4xl">
+            <div className="absolute inset-0 h-full w-full bg-black/20 xl:hidden"></div>
+
+            <motion.header
+                variants={container}
+                initial="initial"
+                animate="animate"
+                className="absolute top-[25%] max-w-[500px] text-center sm:right-[10%] md:text-start"
+            >
+                <motion.h1
+                    variants={fadeUp}
+                    className="text-3xl font-semibold text-white xl:text-4xl"
+                >
                     Powering Precision in Oil & Energy with Data-Driven Systems
-                </h1>
-                <p className="py-6 text-white">
+                </motion.h1>
+
+                <motion.p variants={fadeUp} className="py-6 text-white">
                     Consertex offers real-time analytics, tailored ERP
                     solutions, and industry expertise so you can make faster,
                     smarter decisions.
-                </p>
+                </motion.p>
 
                 <motion.button
+                    variants={fadeUp}
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.6 }}
                 >
                     <Link
                         href="#services"
-                        className="cursor-pointer bg-blue-700 px-3 py-2.5 text-white hover:bg-blue-600"
+                        className="cursor-pointer bg-blue-700 p-3 text-white hover:bg-blue-600"
                     >
                         Explore Our Services
                     </Link>
                 </motion.button>
-            </header>
+            </motion.header>
         </section>
     );
 }

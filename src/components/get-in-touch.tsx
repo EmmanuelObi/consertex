@@ -7,9 +7,14 @@ export default function GetInTouch() {
         <section className="bg-blue-700 px-4 py-10 md:py-20 xl:px-[125px]">
             <section className="container mx-auto">
                 <div className="flex min-h-[25vh] flex-col items-center justify-center gap-2 text-center">
-                    <h1 className="text-2xl font-semibold text-white md:text-3xl">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.8 }}
+                        className="text-2xl font-semibold text-white md:text-3xl"
+                    >
                         Ready to Transform Your Energy Operations?
-                    </h1>
+                    </motion.h1>
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.6 }}

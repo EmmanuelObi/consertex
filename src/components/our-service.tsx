@@ -16,7 +16,7 @@ export default function OurService() {
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ amount: 0.8 }}
+                    viewport={{ once: true, amount: 0.9 }}
                     className="overflow-hidden text-center text-2xl font-semibold md:text-3xl"
                 >
                     Our Services

@@ -1,10 +1,34 @@
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 export default function ProcurementPage() {
+    const container = {
+        initial: { opacity: 0 },
+        animate: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const fadeUp = {
+        initial: { opacity: 0, y: 20 },
+        animate: { opacity: 1, y: 0 },
+    };
     return (
         <section className="px-4 py-10 xl:px-[125px] xl:py-20">
-            <div className="container mx-auto grid gap-10 lg:grid-cols-2 lg:items-center lg:justify-between">
-                <div className="h-[400px] w-full xl:h-[500px]">
+            <motion.div
+                variants={container}
+                viewport={{ once: true }}
+                initial="initial"
+                animate="animate"
+                className="container mx-auto grid gap-10 lg:grid-cols-2 lg:items-center lg:justify-between"
+            >
+                <motion.div
+                    variants={fadeUp}
+                    className="h-[400px] w-full xl:h-[500px]"
+                >
                     <Image
                         src="/procurement.jpg"
                         alt="procurement illustration"
@@ -12,12 +36,18 @@ export default function ProcurementPage() {
                         height={800}
                         className="h-full w-full object-cover"
                     />
-                </div>
-                <div className="max-w-5xl">
-                    <h2 className="mb-4 text-2xl font-semibold md:text-3xl">
+                </motion.div>
+                <motion.div className="max-w-5xl">
+                    <motion.h2
+                        variants={fadeUp}
+                        className="mb-4 text-2xl font-semibold md:text-3xl"
+                    >
                         Procurement
-                    </h2>
-                    <p className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start">
+                    </motion.h2>
+                    <motion.p
+                        variants={fadeUp}
+                        className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start"
+                    >
                         Our Procurement service streamlines the process of
                         sourcing, purchasing, and delivering critical resources
                         for oil, gas, and energy operations. We combine supplier
@@ -25,8 +55,11 @@ export default function ProcurementPage() {
                         optimisation strategies to ensure clients receive the
                         right materials, at the right time, and at the best
                         value.
-                    </p>
-                    <p className="py-3 text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start">
+                    </motion.p>
+                    <motion.p
+                        variants={fadeUp}
+                        className="py-3 text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start"
+                    >
                         By leveraging market intelligence, competitive bidding,
                         and contract management, we help clients minimise
                         procurement risks, control expenses, and maintain
@@ -34,8 +67,11 @@ export default function ProcurementPage() {
                         prioritises transparency, compliance, and efficiency —
                         ensuring that procurement activities align with project
                         timelines and business objectives.
-                    </p>
-                    <p className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start">
+                    </motion.p>
+                    <motion.p
+                        variants={fadeUp}
+                        className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start"
+                    >
                         With deep industry connections and a proven procurement
                         framework, Consertex empowers energy companies to
                         operate without costly delays or supply shortages.
@@ -43,9 +79,9 @@ export default function ProcurementPage() {
                         or technical services, our procurement solutions deliver
                         reliability, cost savings, and operational confidence at
                         every stage of the supply chain.
-                    </p>
-                </div>
-            </div>
+                    </motion.p>
+                </motion.div>
+            </motion.div>
         </section>
     );
 }

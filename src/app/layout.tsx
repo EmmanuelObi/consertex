@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Consertex",
+    title: {
+        template: "%s | Consertex",
+        default: "Consertex",
+    },
     description: "A leading solutions provider in the oil and energy space.",
 };
 

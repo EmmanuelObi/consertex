@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import * as motion from "motion/react-client";
+
+export const metadata: Metadata = {
+    title: "Tailored ERP",
+};
 
 export default function TailoredErpPage() {
     const container = {

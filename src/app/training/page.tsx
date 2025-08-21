@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import * as motion from "motion/react-client";
+
+export const metadata: Metadata = {
+    title: "Training",
+};
 
 export default function TrainingPage() {
     const container = {

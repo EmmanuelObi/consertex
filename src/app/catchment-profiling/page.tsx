@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 
-export default function CatchmentProfilingPafe() {
+export const metadata: Metadata = {
+    title: "Catchment Profiling",
+};
+
+export default function CatchmentProfilingPage() {
     const container = {
         initial: { opacity: 0 },
         animate: {

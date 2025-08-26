@@ -67,10 +67,10 @@ export default function ServiceDropdown({ setShowMenu }: ServiceDropdownProps) {
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                             <Link
-                                href="/business-consultation"
-                                className="cursor-pointer"
+                                href="/business-process-optimisation"
+                                className="cursor-pointer break-words whitespace-normal"
                             >
-                                Business Consultation
+                                Business Process Optimisation
                             </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>

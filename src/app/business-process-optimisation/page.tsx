@@ -47,7 +47,7 @@ export default function BusinessConsultationPage() {
                         variants={fadeUp}
                         className="mb-4 text-2xl font-semibold md:text-3xl"
                     >
-                        Business Consultation
+                        Business Process Optimisation
                     </motion.h2>
                     <motion.p
                         variants={fadeUp}

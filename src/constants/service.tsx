@@ -44,7 +44,7 @@ export const services = [
     },
     {
         id: 5,
-        title: "Business Consultation",
+        title: "Business Process Optimisation",
         subtitle:
             "Expert strategic guidance to navigate market complexities, improve operations, and unlock growth opportunities in the energy sector.",
         icon: <Handshake className="h-8 w-8 text-blue-500" />,

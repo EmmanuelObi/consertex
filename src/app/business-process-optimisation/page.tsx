@@ -53,8 +53,8 @@ export default function BusinessConsultationPage() {
                         variants={fadeUp}
                         className="text-center text-sm leading-6 md:text-base md:leading-8 lg:text-start"
                     >
-                        At Consertex, our Business Consultation service empowers
-                        energy sector organisations to navigate market
+                        At Consertex, our Business Process Optimisation service
+                        empowers energy sector organisations to navigate market
                         complexities with clarity and confidence. We work
                         closely with clients to assess their current operations,
                         identify opportunities for improvement, and develop

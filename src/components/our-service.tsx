@@ -27,7 +27,7 @@ export default function OurService() {
                             href={service.href}
                             onMouseEnter={() => setHoveredIndex(service.id)}
                             onMouseLeave={() => setHoveredIndex(null)}
-                            className={`max-w-[300px] rounded-md bg-white p-4 shadow-sm transition duration-300 ease-in ${
+                            className={`max-w-[300px] rounded-md bg-white p-3 shadow-sm transition duration-300 ease-in ${
                                 hoveredIndex === null
                                     ? ""
                                     : hoveredIndex === service.id
@@ -37,7 +37,7 @@ export default function OurService() {
                             key={service.id}
                         >
                             <div>{service.icon}</div>
-                            <h1 className="py-2.5 text-xl font-semibold">
+                            <h1 className="py-2.5 text-lg font-semibold">
                                 {service.title}
                             </h1>
                             <p className="max-w-[250px] text-sm font-light">
